@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Profile Card</title>
+  <link rel="stylesheet" href="./ProfileCard.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="profile-card">
+  <div class="profile-type">Artist</div>
+  <div class="avatar">
+    <img src="IMG_20230923_135546.jpg" alt="">
+  </div>
+  <div class="details">
+    <h1>Pranjal Sharma</h1>
+    <h2>VFX Artist</h2>
+    <p>If you want to understand the "Art", First understand the "Artist"</p>
+  </div>
+  <div class="numbers">
+    <div class="item">
+      <p>Projects</p>
+      <h2>18</h2>
+    </div>
+    <div class="item">
+      <p>Following</p>
+      <h2>125</h2>
+    </div>
+    <div class="item">
+      <p>Followers</p>
+      <h2>60</h2>
+    </div>
+  </div>
+  <div class="btns">
+    <button class="outline">Follow</button>
+    <button class="fill">Hire Me</button>
+  </div>
+</div>
+<!-- partial -->
+<script>
+  // Function to handle the "Follow" button click
+  function handleFollowButtonClick() {
+    // Redirect to Instagram page
+    window.location.href = "https://www.instagram.com/pranjal.sharma_2";
+  }
+
+  // Function to handle the "Hire Me" button click
+  function handleHireMeButtonClick() {
+    // Redirect to freelancing website
+    window.location.href = "https://www.upwork.com/freelancers/~01519e6eddbb863687";
+  }
+
+  // Get references to the buttons
+  var followButton = document.querySelector(".btns .outline");
+  var hireMeButton = document.querySelector(".btns .fill");
+
+  // Add click event listeners to the buttons
+  followButton.addEventListener("click", handleFollowButtonClick);
+  hireMeButton.addEventListener("click", handleHireMeButtonClick);
+</script>
+  
+</body>
+</html>

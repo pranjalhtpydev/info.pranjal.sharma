@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pranjal's Portfolio</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;display=swap'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./form.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <div class="form-title">
+    Login Page
+  </div>
+  <div class="form-input">
+    <label for="username">Username</label>
+    <input type="text" id="username">
+  </div>
+  <div class="form-input">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+  </div>
+  <div class="captcha">
+    <label for="captcha-input">Enter Captcha</label>
+    <div class="preview"></div>
+    <div class="captcha-form">
+      <input type="text" id="captcha-form" placeholder="Enter captcha text">
+      <button class="captcha-refresh">
+        <i class="fa fa-refresh"></i>
+      </button>
+    </div>
+  </div>
+  <div class="form-input">
+    <button id="login-btn">Login</button>
+  </div>
+  <div>
+    <button onclick="window.location.href='ProfileCard.html'">Go to Profile Card</button>
+  </div>
+  <div><p><code>For Username & Password, visit this link</code></p>
+  </div>
+  <div>
+    <button onclick="window.location.href='https://pranjalhtpydev.github.io/use.gen/'">Get Usr&Pass</button>
+  </div>
+    
+  
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script><script  src="./form.js"></script>
+
+</body>
+</html>
